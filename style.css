@@ -1,0 +1,142 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.container{
+    height: 100vh;
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: white;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 10px 10px 25px rgb(0,0,0,0.05) ;
+}
+
+.card-img {
+    width: 200px;
+    height: auto;
+    background: url('./images/drawers.jpg') no-repeat;
+    background-size: cover  ;
+    border-radius: 5px 0 0 5px;
+}
+
+.card-info {
+    width: 300px;
+    color: hsl(217, 19%, 35%);
+}
+
+.text-info{
+    padding: 20px 20px 0 20px;
+}
+
+.text-info h3{
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.text-info p{
+    font-weight: 500;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.cta{
+    display: flex;
+    margin-top: 20px;
+    padding: 0 20px 20px 20px;
+}
+
+.avatar{
+    display: flex;
+    align-items: center;
+}
+
+.avatar img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.profile-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 10px;
+    justify-content: center;
+}
+
+.profile-detail h5 , .profile-detail p{
+    font-size: 10px;
+}
+
+.cta-btn{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.cta-btn button{
+    border-radius: 50%;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+@media screen and (min-width:500px){
+    
+}
+
+.tooltip{
+    width: 180px;
+    height: 50px;
+    position: absolute;
+    background-color:hsl(217, 19%, 35%);
+    bottom: 125%;
+    left: -78px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+.tooltip::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+}
+
+.tooltip p{
+    color: hsl(210, 46%, 95%);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 10px;
+}
+
+.tooltip img{
+    cursor: pointer;
+}
+
+
+@media screen and (max-width : 500px){
+    .card{
+        display: block;
+    }
+    .card-img{
+        width: 300px;
+        height: 200px;
+    }
+}

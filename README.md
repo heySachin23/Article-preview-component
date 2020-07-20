@@ -21,6 +21,8 @@ Your users should be able to:
 - View the optimal layout for the component depending on their device's screen size
 - See the social media share links when they click the share icon
 
+[Demo Link](https://article-preview-component-rouge.vercel.app/)
+
 ## Where to find everything
 
 The designs are available inside the `/design` folder. You will find both a mobile and a desktop version of the design to work to. 
